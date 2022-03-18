@@ -22,7 +22,7 @@ namespace Logging
             Thread.Sleep(3000); //SRP: sending emails
             logger.Log("Program Ended");
         }
-        static void slack()
+        static void slack() 
         {
             var client = new RestClient("https://hooks.slack.com/services/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");
             var request = new RestRequest();
