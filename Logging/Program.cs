@@ -1,14 +1,14 @@
-﻿using Driver;
-using LoggerCore;
+﻿using CMPS253.LoggerCore;
+using CMPS253.Loggers;
 
-namespace Logging
+namespace CMPS253.Logging
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ILogger logger = new AllLogger(@"c:\trash\log2.txt");
-            logger.Log("hello");
+            ILogger logger = new AllLogger();
+            logger.Log("Test");
         }
     }
 }

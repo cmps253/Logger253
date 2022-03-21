@@ -1,19 +1,36 @@
-﻿using Logger253;
-using LoggerCore;
+﻿using CMPS253.LoggerCore;
 
-namespace Driver
+namespace CMPS253.Loggers
 {
-    public class AllLogger : BaseLogger
+    public class AllLogger : ILogger
     {
-        string _fileName;
-        public AllLogger(string fileName)
+        List<ILogger> _loggers = new();
+        public AllLogger()
         {
-            _fileName = fileName;
+            IConfigFile config = new ConfigFile();
+            List<(string logger, string constructorParam)>? loggers = config.GetValueList("logger");
+
+            foreach (var item in loggers)
+            {
+                var T = Type.GetType(item.logger);
+                ILogger L;
+                if (item.constructorParam == null)
+                {
+                    L = (ILogger)Activator.CreateInstance(T);
+                }
+                else
+                {
+                    L = (ILogger)Activator.CreateInstance(T, new object[] { item.constructorParam });
+                }
+                _loggers.Add(L);
+            }
         }
-        protected override void ConcreteLogging(string msg)
+        public void Log(string msg)
         {
-            new ConsoleLogger().Log(msg);
-            new FileLogger(_fileName).Log(msg);
+            foreach (var logger in _loggers)
+            {
+                logger.Log(msg);
+            }
         }
     }
 }

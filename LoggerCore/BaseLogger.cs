@@ -1,4 +1,4 @@
-﻿namespace LoggerCore
+﻿namespace CMPS253.LoggerCore
 {
     public abstract class BaseLogger : ILogger
     {

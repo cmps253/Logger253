@@ -1,6 +1,6 @@
-﻿using LoggerCore;
+﻿using CMPS253.LoggerCore;
 
-namespace Logger253
+namespace CMPS253.Loggers
 {
     public class FileLogger : BaseLogger
     {
