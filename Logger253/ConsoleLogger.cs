@@ -4,9 +4,9 @@ namespace Logger253
 {
     public class ConsoleLogger : BaseLogger
     {
-        public override void Log(string msg)
+        protected override void ConcreteLogging(string msg)
         {
-            Console.WriteLine(base.FormatMessage(msg)); //SRP: knowing HOW to log
+            Console.WriteLine(msg); //SRP: knowing HOW to log
         }
     }
 }

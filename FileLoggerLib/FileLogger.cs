@@ -9,9 +9,9 @@ namespace Logger253
         {
             _fileName = fileName;
         }
-        public override void Log(string msg)
+        protected override void ConcreteLogging(string msg)
         {
-            File.AppendAllText(_fileName, base.FormatMessage(msg));
+            File.AppendAllText(_fileName, msg);
         }
     }
 }
