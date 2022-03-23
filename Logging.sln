@@ -11,11 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileLoggerLib", "FileLogger
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{C7908FC9-96BC-4DF6-B9BC-1925AD927636}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllLogger", "AllLogger\AllLogger.csproj", "{6FE43CC0-0B8C-4584-BBD8-F01CEC82B74F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger253", "AllLogger\Logger253.csproj", "{6FE43CC0-0B8C-4584-BBD8-F01CEC82B74F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerCore", "LoggerCore\LoggerCore.csproj", "{8363167D-3660-4649-8B2A-D523226B6304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackLoggerLib", "SlackLoggerLib\SlackLoggerLib.csproj", "{C1DDEF55-E0C5-487F-960D-0A86C60E0815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlackLoggerLib", "SlackLoggerLib\SlackLoggerLib.csproj", "{C1DDEF55-E0C5-487F-960D-0A86C60E0815}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

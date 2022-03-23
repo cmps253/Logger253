@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FileLoggerLib\FileLoggerLib.csproj" />
-    <ProjectReference Include="..\Logger253\ConsoleLoggerLib.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoggerCore\LoggerCore.csproj" />
   </ItemGroup>
 
 </Project>

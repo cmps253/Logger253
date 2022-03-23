@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AllLogger\Logger253.csproj" />
     <ProjectReference Include="..\LoggerCore\LoggerCore.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,4 @@
-﻿namespace AllLogger
+﻿namespace CMPS253.LoggerCore
 {
     public class LogEntry
     {
