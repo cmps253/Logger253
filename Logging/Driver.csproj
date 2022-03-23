@@ -8,17 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="RestSharp" Version="107.3.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AllLogger\AllLogger.csproj" />
-    <ProjectReference Include="..\SlackLoggerLib\SlackLoggerLib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
+    <ProjectReference Include="..\LoggerCore\LoggerCore.csproj" />
   </ItemGroup>
 
 </Project>
